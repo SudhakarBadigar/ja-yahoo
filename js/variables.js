@@ -1,0 +1,11 @@
+var Name = "Hello world";
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);
+console.log(Name);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt box</title>
+</head>
+
+<script>
+    var a = prompt("Enter your Name")
+    var per = prompt("Enter your percentage");
+
+    if(per >= 80 && per <= 100){
+        document.write(a + " congrats you have got Distinction: " + per);
+    }
+    else if(per >=60 && per <=80){
+        document.write(a + " congrats you have got First class:" + per);
+    }
+    else if(per>=50 && per <=60){
+        document.write(a + " congrats you have got Second class: " + per);
+    }
+    else if(per >= 35 && per <=50){
+        document.write(a + " congrats just pass" + per);
+    }
+    else if(per < 35){
+        document.write(" sorry are failed" + per);
+    }else{
+        document.write("please enter valid percentage");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>
