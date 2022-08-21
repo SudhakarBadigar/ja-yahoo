@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script>
+        function pro(){
+            document.write("Normal Function Calling</br>");
+        }
+        pro();
+        
+        function pro1(){
+            document.write("onclick function Event </br>");
+        }
+
+        function pro2(){
+            document.write("ondblclick function Event </br>");
+        }
+
+        function pro3(){
+            /*oncontextmenu is a event that will pop up ehen you right click on the button*/
+            alert("oncontextmenu Event");
+        }
+        function pro4(){
+            alert("onMouseEnter Event");
+        }
+        function pro5(){
+            alert("on Mouse Out Event");
+        }
+        function pro6(){
+            alert("on Mouse down");
+        }
+        function pro7(){
+            alert("on Mouse Leave");
+        }
+        function pro8(){
+            alert("Welcome to functionEvents,onkeypress will work only in bodyTag/formTag.");
+        }
+
+        function pro9(){
+            alert("Hello this is resize Event if you try to resize the winow/web page this will pop up ")
+        }
+        function pro10(){
+            alert("Onscroll event this pops up when you scroll down the page")
+        }
+
+        function pro11(){
+            alert("onload event this will pop up when you load the page ");
+        }
+        function pro12(){
+            alert("onunload this will pop up when you unload the page ")
+        }
+
+    </script>
+</head>
+<body class="btn btn-info" onkeypress="pro8()" onresize="pro9()" onscroll="pro10()" onload="pro11()" onunload="pro12()">
+    <!--sometime the onunload and onload will not work together check this out. -->
+    <button class="btn btn-primary" onclick="pro1()">onclick</button></body><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-success" ondblclick="pro2()">ondblclick</button><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-warning" oncontextmenu="pro3()">oncontextmenu(right click)</button><br><br>
+    <p class="btn btn-primary" oncontextmenu="pro3()">right click oncontextmenu</p><br><br>
+    <button class="btn btn-danger" onmouseenter="pro4()">onMouseEnter</button><br><br>
+    <div>
+        <button class="btn btn-info" onmouseout="pro5()">onmouseout</button><br><br>
+        <p>
+            this is on mouse out it will pop up even parent to child or child to parent and even
+            comming out of the div as well.
+        </p>
+    </div>
+    <button class="btn btn-dark" onmousedown="pro6()">onMouseDown</button><br><br>
+    <div>
+        <button class="btn btn-outline-secondary" onmouseleave="pro7()">onMouseLeave</button>
+        <p>
+            in on mouse leave if you are revolving under parent to child and 
+            child to parent it will not change only if you come out of the 
+            div element it will pop up thats the only differnce between the 
+            onmouseout and onmouseleave
+        </p>
+    </div>
+    <button class="btn btn-danger" onmouseup="pro8()">onmouseup</button>
+    
+
+
+</body>
+</html>
