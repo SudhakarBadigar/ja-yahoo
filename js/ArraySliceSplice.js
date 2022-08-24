@@ -10,5 +10,6 @@ console.log("..................");
 //splice method syntax: filename.splice(index,how many to delete,"new value");
 var lname = ["lara","rampaul","pointing","donald","polock","virat","rohit"];
 console.log(lname);
-console.log(lname.splice(2,0,"ricky"));
+var bon = lname.splice(2,0,"ricky");
+console.log(bon);
 

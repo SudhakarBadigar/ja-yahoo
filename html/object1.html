@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object creation</title>
+    
+    <script>
+        var employee={
+            fname : "ram",
+            lname : "kumar",
+            age : 25,
+            email: "ram@yahoo.com",
+            favMovies : ["forrest Gump","Troy","super-man","D-company"],
+            salary : function(){
+                return 50000;
+            },
+            location : "Bangalore",
+        }
+        //document.write(employee);
+        console.log(employee);
+        document.write(employee.fname + "<br>");
+        //employee.join(" ");
+       /// document.write(employee.favMovies.join(" - ") + "<br>");
+        document.write(employee.favMovies + "<br>");
+        document.write(employee.salary());
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
