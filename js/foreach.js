@@ -14,3 +14,25 @@ var sud1 = fnames.forEach(sud)
 function sud (value,index){
     console.log(value +" : "+ index);
 }
+
+console.log("......................");
+var city=["mexico","Bangalore","NewYork","california"];
+ city.forEach(function(index,value){
+    
+
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

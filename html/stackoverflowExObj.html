@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <script>
+            var lineChartData = [{
+            date: new Date(2009, 10, 2),
+            value: 5
+               },
+        
+         {
+            date: new Date(2009, 10, 25),
+            value: 30
+         },
+        
+         {
+            date: new Date(2009, 10, 26),
+            value: 72,
+            customBullet: "images/redstar.png"
+        }];
+
+        for(var a =0;a<lineChartData.length;a++){
+            document.write(lineChartData[a].date + ":" + lineChartData[a].value + "<br><br> ");
+        }
+        </script>
+
+</head>
+
+<body>
+    
+</body>
+</html>
