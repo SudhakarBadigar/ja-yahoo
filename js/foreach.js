@@ -18,6 +18,7 @@ function sud (value,index){
 console.log("......................");
 var city=["mexico","Bangalore","NewYork","california"];
  city.forEach(function(index,value){
+    console.log(value+": "+index);
     
 
  });
